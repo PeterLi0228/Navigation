@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人导航站 - 我的书签</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-compass"></i>
+                    我的导航站
+                </h1>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="搜索网站..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要内容 -->
+        <main class="main-content">
+            <!-- 书签栏 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-bookmark"></i>
+                    书签栏
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.google.com/" target="_blank" class="site-card" data-keywords="google 搜索 谷歌">
+                        <div class="site-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Google</h3>
+                            <p>全球最大的搜索引擎</p>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="site-card" data-keywords="youtube 视频 油管">
+                        <div class="site-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>YouTube</h3>
+                            <p>全球最大的视频分享平台</p>
+                        </div>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=zh-CN#inbox" target="_blank" class="site-card" data-keywords="gmail 谷歌邮箱 邮件">
+                        <div class="site-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Gmail</h3>
+                            <p>谷歌邮箱</p>
+                        </div>
+                    </a>
+                    <a href="https://www.netflix.com/tudum/top10/hong-kong" target="_blank" class="site-card" data-keywords="netflix top10 香港 排行榜">
+                        <div class="site-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Netflix Top 10</h3>
+                            <p>Netflix香港排行榜</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 油管 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fab fa-youtube"></i>
+                    油管
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.tkspstore.com/?affId=cmbMNa4I1t#/goods-list" target="_blank" class="site-card" data-keywords="跨境百宝箱 商品">
+                        <div class="site-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>跨境百宝箱</h3>
+                            <p>商品-跨境百宝箱</p>
+                        </div>
+                    </a>
+                    <a href="https://socialblade.com/" target="_blank" class="site-card" data-keywords="socialblade youtube 统计 数据">
+                        <div class="site-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>SocialBlade</h3>
+                            <p>YouTube, Twitch, Twitter, & Instagram Statistics</p>
+                        </div>
+                    </a>
+                    <a href="https://rlwxa0zgke.feishu.cn/docx/JuFvdUK49ooNPmx0JTPcjjA0nce" target="_blank" class="site-card" data-keywords="youtube ytt 收款 飞书文档">
+                        <div class="site-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>YouTube YTT收款</h3>
+                            <p>关于YouTube YTT收款的保姆级流程</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tubefilter.com/category/youtube/" target="_blank" class="site-card" data-keywords="tubefilter youtube 新闻">
+                        <div class="site-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Tubefilter</h3>
+                            <p>YouTube Archives - Tubefilter</p>
+                        </div>
+                    </a>
+                    <a href="https://scys.com/view/docx/CkoidgbmBoL4LkxehYsckPwlnUd" target="_blank" class="site-card" data-keywords="youtube shorts 生财">
+                        <div class="site-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>YouTube Shorts</h3>
+                            <p>YouTube Shorts相关资料</p>
+                        </div>
+                    </a>
+                    <a href="https://yemahuyou.feishu.cn/docx/LqrQdiP3aoT6cmxeaVScS0qdnIf" target="_blank" class="site-card" data-keywords="shorts 赛道 匿名 飞书">
+                        <div class="site-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Shorts赛道选择</h3>
+                            <p>如何选择自己合适的匿名Shorts赛道</p>
+                        </div>
+                    </a>
+                    <a href="https://ytlarge.com/youtube/monetization-checker/cn" target="_blank" class="site-card" data-keywords="youtube 货币化 检查器">
+                        <div class="site-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>YouTube货币化检查</h3>
+                            <p>YouTube货币化检查器 - 是否已货币化？</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- GitHub -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://github.com/" target="_blank" class="site-card" data-keywords="github 代码 开源 全世界构建软件">
+                        <div class="site-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>GitHub</h3>
+                            <p>全世界构建软件的地方</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/PeterLi0228" target="_blank" class="site-card" data-keywords="PeterLi0228 个人主页">
+                        <div class="site-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>PeterLi0228</h3>
+                            <p>个人GitHub主页</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 学习 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    学习
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.json.cn/#" target="_blank" class="site-card" data-keywords="json 在线解析 格式化验证">
+                        <div class="site-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>JSON在线解析</h3>
+                            <p>JSON在线解析及格式化验证</p>
+                        </div>
+                    </a>
+                    <a href="https://curlconverter.com/" target="_blank" class="site-card" data-keywords="curl 转换 代码">
+                        <div class="site-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Curl转换器</h3>
+                            <p>Convert curl commands to code</p>
+                        </div>
+                    </a>
+                    <a href="https://www.heywhale.com/home/special" target="_blank" class="site-card" data-keywords="heywhale 和鲸 数据科学">
+                        <div class="site-icon">
+                            <i class="fas fa-whale"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>和鲸科技</h3>
+                            <p>频道 - Heywhale.com</p>
+                        </div>
+                    </a>
+                    <a href="https://free.kuaidaili.com/free/inha/1/" target="_blank" class="site-card" data-keywords="快代理 免费代理 http代理">
+                        <div class="site-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>快代理</h3>
+                            <p>国内高匿免费HTTP代理IP</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Airport -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-plane"></i>
+                    Airport
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://mitce.com/clientarea.php?action=productdetails&id=105155" target="_blank" class="site-card" data-keywords="mitce 机场">
+                        <div class="site-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Mitce</h3>
+                            <p>Mitce机场</p>
+                        </div>
+                    </a>
+                    <a href="https://llgjc1.com/#/stage/dashboard" target="_blank" class="site-card" data-keywords="流量光机场 仪表盘">
+                        <div class="site-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>流量光机场</h3>
+                            <p>仪表盘 - 流量光机场</p>
+                        </div>
+                    </a>
+                    <a href="http://74.211.96.23:10000/2MTK/xui/inbounds" target="_blank" class="site-card" data-keywords="us 服务器">
+                        <div class="site-icon">
+                            <i class="fas fa-flag-usa"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>US服务器</h3>
+                            <p>美国服务器管理</p>
+                        </div>
+                    </a>
+                    <a href="https://bandwagonhost.com/services" target="_blank" class="site-card" data-keywords="搬瓦工 vps">
+                        <div class="site-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>搬瓦工</h3>
+                            <p>BandwagonHost VPS服务</p>
+                        </div>
+                    </a>
+                    <a href="https://xn--mes358a9urctx.com/#/dashboard" target="_blank" class="site-card" data-keywords="顶级机场">
+                        <div class="site-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>顶级机场</h3>
+                            <p>顶级机场服务</p>
+                        </div>
+                    </a>
+                    <a href="https://bxox.top/#/dashboard" target="_blank" class="site-card" data-keywords="mboxx 仪表盘">
+                        <div class="site-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>MBOXX</h3>
+                            <p>仪表盘 | MBOXX</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 资源 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-download"></i>
+                    资源
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.bookmarkearth.com/" target="_blank" class="site-card" data-keywords="书签地球 浏览器书签 共享搜索">
+                        <div class="site-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>书签地球</h3>
+                            <p>中国首家浏览器书签共享搜索引擎平台</p>
+                        </div>
+                    </a>
+                    <a href="https://www.52pojie.cn/" target="_blank" class="site-card" data-keywords="吾爱破解 安卓破解 病毒分析">
+                        <div class="site-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>吾爱破解</h3>
+                            <p>安卓破解|病毒分析</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tboxn.com/sitetag/zlibrary%e9%95%9c%e5%83%8f%e7%bd%91%e7%ab%99" target="_blank" class="site-card" data-keywords="zlibrary 镜像网站 电子书">
+                        <div class="site-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Zlibrary镜像</h3>
+                            <p>Zlibrary镜像网站导航</p>
+                        </div>
+                    </a>
+                    <a href="https://go.ssrdog.com/" target="_blank" class="site-card" data-keywords="ssrdog 导航站">
+                        <div class="site-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>SSRDOG导航</h3>
+                            <p>SSRDOG 导航站</p>
+                        </div>
+                    </a>
+                    <a href="https://fitgirl-repacks.site/" target="_blank" class="site-card" data-keywords="fitgirl 游戏 破解">
+                        <div class="site-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>FitGirl游戏</h3>
+                            <p>FitGirl 游戏资源</p>
+                        </div>
+                    </a>
+                    <a href="https://thepiratebay.org/index.html" target="_blank" class="site-card" data-keywords="海盗湾 bt 下载">
+                        <div class="site-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>海盗湾</h3>
+                            <p>The Pirate Bay</p>
+                        </div>
+                    </a>
+                    <a href="https://www.mini4k.com/" target="_blank" class="site-card" data-keywords="mini4k 4k电影 高清">
+                        <div class="site-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>MINI4K</h3>
+                            <p>最好的高清2160P 4K电影下载网站</p>
+                        </div>
+                    </a>
+                    <a href="https://www.bdys10.com/" target="_blank" class="site-card" data-keywords="哔嘀影视 电影 下载">
+                        <div class="site-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>哔嘀影视</h3>
+                            <p>热门电影，最新电影，最新电视剧</p>
+                        </div>
+                    </a>
+                    <a href="https://www.gyg.si/" target="_blank" class="site-card" data-keywords="观影 gying 电影">
+                        <div class="site-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>观影GYING</h3>
+                            <p>观影 GYING</p>
+                        </div>
+                    </a>
+                    <a href="https://fauxid.com/fake-name-generator" target="_blank" class="site-card" data-keywords="假名生成器 虚假身份">
+                        <div class="site-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>假名生成器</h3>
+                            <p>Fake Name Generator | FauxID.com</p>
+                        </div>
+                    </a>
+                    <a href="http://www.yxcs888.com/" target="_blank" class="site-card" data-keywords="邮箱批发 全新邮箱">
+                        <div class="site-icon">
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>邮箱批发</h3>
+                            <p>全新邮箱批发</p>
+                        </div>
+                    </a>
+                    <a href="https://ttsmaker.com/zh-cn" target="_blank" class="site-card" data-keywords="tts 文字转语音 在线">
+                        <div class="site-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>TTSMaker</h3>
+                            <p>在线免费文字转语音</p>
+                        </div>
+                    </a>
+                    <a href="https://wanwang.aliyun.com/" target="_blank" class="site-card" data-keywords="阿里云 万网 域名">
+                        <div class="site-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>阿里云</h3>
+                            <p>阿里云万网</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Web AI -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-robot"></i>
+                    Web AI
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://openrouter.ai/docs/quickstart" target="_blank" class="site-card" data-keywords="openrouter ai api 快速开始">
+                        <div class="site-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>OpenRouter</h3>
+                            <p>OpenRouter Quickstart Guide</p>
+                        </div>
+                    </a>
+                    <a href="https://search.google.com/search-console?resource_id=sc-domain%3Alike228.online" target="_blank" class="site-card" data-keywords="google search console gsc">
+                        <div class="site-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>GSC</h3>
+                            <p>Google Search Console</p>
+                        </div>
+                    </a>
+                    <a href="https://analytics.google.com/analytics/web/#/a350067923p483156814/admin/streams/table/" target="_blank" class="site-card" data-keywords="google analytics 分析">
+                        <div class="site-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Google Analytics</h3>
+                            <p>网站数据分析</p>
+                        </div>
+                    </a>
+                    <a href="https://vercel.com/templates" target="_blank" class="site-card" data-keywords="vercel 模板 部署">
+                        <div class="site-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Vercel</h3>
+                            <p>云部署平台模板</p>
+                        </div>
+                    </a>
+                    <a href="https://zh-hans.tld-list.com/" target="_blank" class="site-card" data-keywords="域名 顶级域名 价格比较">
+                        <div class="site-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>顶级域名列表</h3>
+                            <p>比较所有顶级域名的价格</p>
+                        </div>
+                    </a>
+                    <a href="https://www.spaceship.com/zh/application/domain-list-application/" target="_blank" class="site-card" data-keywords="spaceship 域名管理">
+                        <div class="site-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Spaceship</h3>
+                            <p>域名管理器应用程序</p>
+                        </div>
+                    </a>
+                    <a href="https://dash.cloudflare.com/login" target="_blank" class="site-card" data-keywords="cloudflare 仪表板 cdn">
+                        <div class="site-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Cloudflare</h3>
+                            <p>Cloudflare Dashboard</p>
+                        </div>
+                    </a>
+                    <a href="https://www.toolify.ai/zh/Best-AI-Tools-Source" target="_blank" class="site-card" data-keywords="toolify ai工具 邮件">
+                        <div class="site-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Toolify</h3>
+                            <p>邮件的最好的AI工具</p>
+                        </div>
+                    </a>
+                    <a href="https://shimo.im/sheets/L9kBByZxzLUy4xkK" target="_blank" class="site-card" data-keywords="石墨文档 开发网站 百问百答">
+                        <div class="site-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>开发网站群</h3>
+                            <p>202503 开发网站2群|百问百答</p>
+                        </div>
+                    </a>
+                    <a href="https://ai-web-by-shengcai.vercel.app/" target="_blank" class="site-card" data-keywords="生财ai 网站开发 常见问题">
+                        <div class="site-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>生财AI网站开发</h3>
+                            <p>生财AI网站开发4群 - 常见问题汇总</p>
+                        </div>
+                    </a>
+                    <a href="https://unicloud.dcloud.net.cn/" target="_blank" class="site-card" data-keywords="unicloud 服务空间">
+                        <div class="site-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>uniCloud</h3>
+                            <p>服务空间 - uniCloud</p>
+                        </div>
+                    </a>
+                    <a href="https://www.ventusky.com/?p=24.874;102.804;11&l=feel" target="_blank" class="site-card" data-keywords="ventusky 天气 气象">
+                        <div class="site-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Ventusky</h3>
+                            <p>全球天气可视化</p>
+                        </div>
+                    </a>
+                    <a href="https://console.cloud.tencent.com/lighthouse/instance/index?rid=1" target="_blank" class="site-card" data-keywords="腾讯云 轻量云 服务器">
+                        <div class="site-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>腾讯云轻量</h3>
+                            <p>服务器 - 轻量云 - 控制台</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 公众号 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fab fa-weixin"></i>
+                    公众号
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://xiumi.us/#/" target="_blank" class="site-card" data-keywords="秀米 微信排版 公众号图文">
+                        <div class="site-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>秀米</h3>
+                            <p>微信排版编辑器_公众号图文排版工具</p>
+                        </div>
+                    </a>
+                    <a href="https://mp.weixin.qq.com/" target="_blank" class="site-card" data-keywords="微信公众平台 公众号">
+                        <div class="site-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>微信公众平台</h3>
+                            <p>微信公众号管理平台</p>
+                        </div>
+                    </a>
+                    <a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login" target="_blank" class="site-card" data-keywords="微信公众平台 测试号 沙盒">
+                        <div class="site-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>微信测试号</h3>
+                            <p>微信公众平台测试号</p>
+                        </div>
+                    </a>
+                    <a href="https://id.qweather.com/#/login" target="_blank" class="site-card" data-keywords="和风天气 登录">
+                        <div class="site-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>和风天气</h3>
+                            <p>登录 | 和风天气</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Trend -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-trending-up"></i>
+                    Trend
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://x.com/home" target="_blank" class="site-card" data-keywords="twitter x 社交媒体">
+                        <div class="site-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>X (Twitter)</h3>
+                            <p>Home / X</p>
+                        </div>
+                    </a>
+                    <a href="https://www.v2ex.com/" target="_blank" class="site-card" data-keywords="v2ex 技术社区">
+                        <div class="site-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>V2EX</h3>
+                            <p>创意工作者们的社区</p>
+                        </div>
+                    </a>
+                    <a href="https://stackoverflow.com/questions" target="_blank" class="site-card" data-keywords="stackoverflow 编程问答">
+                        <div class="site-icon">
+                            <i class="fab fa-stack-overflow"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Stack Overflow</h3>
+                            <p>Newest Questions</p>
+                        </div>
+                    </a>
+                    <a href="https://medium.com/" target="_blank" class="site-card" data-keywords="medium 博客 文章">
+                        <div class="site-icon">
+                            <i class="fab fa-medium"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Medium</h3>
+                            <p>在线发布平台</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/langgptai/wonderful-prompts?tab=readme-ov-file#%E6%A8%A1%E4%BB%BF%E6%8C%87%E5%AE%9A%E9%A3%8E%E6%A0%BC%E5%86%99%E4%BD%9C" target="_blank" class="site-card" data-keywords="chatgpt prompt 中文">
+                        <div class="site-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Wonderful Prompts</h3>
+                            <p>中文 prompt 精选，ChatGPT 使用指南</p>
+                        </div>
+                    </a>
+                    <a href="https://www.2925.com/#/mailList" target="_blank" class="site-card" data-keywords="2925邮箱 无限邮">
+                        <div class="site-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>2925邮箱</h3>
+                            <p>2925邮箱-无限邮</p>
+                        </div>
+                    </a>
+                    <a href="https://humva.com/" target="_blank" class="site-card" data-keywords="humva">
+                        <div class="site-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Humva</h3>
+                            <p>humva.com</p>
+                        </div>
+                    </a>
+                    <a href="https://app.follow.is/timeline/view-1/all/pending" target="_blank" class="site-card" data-keywords="follow 社交媒体 folo">
+                        <div class="site-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Follow</h3>
+                            <p>社交媒体 | Folo</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/messages?lang=en" target="_blank" class="site-card" data-keywords="tiktok 消息 抖音">
+                        <div class="site-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>TikTok</h3>
+                            <p>Messages | TikTok</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Coze -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-robot"></i>
+                    Coze
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.coze.cn/space/7424780497773346828/library" target="_blank" class="site-card" data-keywords="coze 扣子 资源库">
+                        <div class="site-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Coze资源库</h3>
+                            <p>资源库 - 扣子</p>
+                        </div>
+                    </a>
+                    <a href="https://g198q4n7awl.feishu.cn/wiki/AkrGwA90airwHnkXxGxce5HnnHe?table=tbllhveTmHzWf8Te&view=vewVZ3yXtI" target="_blank" class="site-card" data-keywords="飞书 公众号url">
+                        <div class="site-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>公众号URL</h3>
+                            <p>飞书云文档</p>
+                        </div>
+                    </a>
+                    <a href="https://www.coze.cn/store/project/7493494577996152847?entity_id=1&bid=6g14pq3846g17" target="_blank" class="site-card" data-keywords="微信文案整合 coze">
+                        <div class="site-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>微信文案整合</h3>
+                            <p>微信文案整合 - 扣子</p>
+                        </div>
+                    </a>
+                    <a href="https://foofish.net/writing-prompt.html" target="_blank" class="site-card" data-keywords="公众号 爆款 ai写作指令">
+                        <div class="site-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>爆款写作指令</h3>
+                            <p>公众号爆款AI写作指令</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 常用网站 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-star"></i>
+                    常用网站
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.bilibili.com/" target="_blank" class="site-card" data-keywords="bilibili b站 哔哩哔哩 视频">
+                        <div class="site-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>哔哩哔哩</h3>
+                            <p>哔哩哔哩 (゜-゜)つロ 干杯~</p>
+                        </div>
+                    </a>
+                    <a href="https://www.yuque.com/dashboard" target="_blank" class="site-card" data-keywords="语雀 工作台 文档">
+                        <div class="site-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>语雀</h3>
+                            <p>工作台 · 语雀</p>
+                        </div>
+                    </a>
+                    <a href="https://mail.163.com/" target="_blank" class="site-card" data-keywords="163邮箱 网易邮箱">
+                        <div class="site-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>163邮箱</h3>
+                            <p>163网易免费邮-你的专业电子邮局</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 对马岛 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-gamepad"></i>
+                    对马岛
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://www.gamersky.com/z/ghostoftsushima/" target="_blank" class="site-card" data-keywords="对马岛之魂 游戏专区 游民星空">
+                        <div class="site-icon">
+                            <i class="fas fa-sword"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>对马岛之魂</h3>
+                            <p>对马岛之魂游戏专区_游民星空</p>
+                        </div>
+                    </a>
+                    <a href="https://www.gamersky.com/tools/map/tsushima/" target="_blank" class="site-card" data-keywords="对马岛之魂 全收集 互动地图">
+                        <div class="site-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>对马岛收集地图</h3>
+                            <p>对马岛之魂全收集互动地图</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 实用工具 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-tools"></i>
+                    实用工具
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://fanyi.baidu.com/?aldtype=85#en/zh/" target="_blank" class="site-card" data-keywords="百度翻译 翻译工具">
+                        <div class="site-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>百度翻译</h3>
+                            <p>百度翻译-200种语言互译、沟通全世界！</p>
+                        </div>
+                    </a>
+                    <a href="https://sms-activate.org/cn" target="_blank" class="site-card" data-keywords="短信接收 虚拟号码">
+                        <div class="site-icon">
+                            <i class="fas fa-sms"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>SMS-Activate</h3>
+                            <p>在线接受短信的虚拟号码</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 小红书 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-heart"></i>
+                    小红书
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://ark.xiaohongshu.com/app-system/home?from=ark-login" target="_blank" class="site-card" data-keywords="小红书 首页工作台">
+                        <div class="site-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>小红书工作台</h3>
+                            <p>首页工作台</p>
+                        </div>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/explore" target="_blank" class="site-card" data-keywords="小红书 生活指南">
+                        <div class="site-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>小红书</h3>
+                            <p>小红书 - 你的生活指南</p>
+                        </div>
+                    </a>
+                    <a href="https://csj.sgj.cn/main/sfsjcx?app_id=649&auth_key=1b25aevLC%2F4yrjlyjB9%2FQPa5gmEGZecPSG6vw4C3riyKlnqFa43l5vu%2B0rz5%2FxlJMRA05s0g" target="_blank" class="site-card" data-keywords="数据查询">
+                        <div class="site-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>数据查询</h3>
+                            <p>数据查询 1960249218</p>
+                        </div>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/674ef47c000000001d02f832?channelType=web_engagement_notification_page&channelTabId=connections&xsec_token=&xsec_source=pc_notice" target="_blank" class="site-card" data-keywords="李可 小红书个人主页">
+                        <div class="site-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>李可</h3>
+                            <p>李可 - 小红书</p>
+                        </div>
+                    </a>
+                    <a href="https://www.gaoding.com/templates/xiaohongshu?from=recommend-search-word" target="_blank" class="site-card" data-keywords="稿定设计 小红书配图 模板">
+                        <div class="site-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>稿定设计</h3>
+                            <p>小红书配图_小红书封面_小红书创意设计模板</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 软路由 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-router"></i>
+                    软路由
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://github.com/stupidloud/nanopi-openwrt?tab=readme-ov-file#%E4%BD%BF%E7%94%A8%E6%8F%90%E7%A4%BA" target="_blank" class="site-card" data-keywords="nanopi openwrt 固件">
+                        <div class="site-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>NanoPi OpenWrt</h3>
+                            <p>Openwrt for Nanopi R1S R2S R4S R5S 香橙派 R1 Plus 固件编译</p>
+                        </div>
+                    </a>
+                    <a href="https://mmensee.gitbook.io/r2s-r4s/gu-jian-xia-zai-shua-ji-fang-fa/r2s-gu-jian-xia-zai-he-ji" target="_blank" class="site-card" data-keywords="r2s r4s 固件下载">
+                        <div class="site-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>R2S固件下载</h3>
+                            <p>R2S固件下载合集 | R2S/R4S软路由</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/QiuSimons/YAOF/releases" target="_blank" class="site-card" data-keywords="yaof 固件 releases">
+                        <div class="site-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>YAOF固件</h3>
+                            <p>Releases · QiuSimons/YAOF</p>
+                        </div>
+                    </a>
+                    <a href="https://my.zerotier.com/" target="_blank" class="site-card" data-keywords="zerotier 虚拟网络">
+                        <div class="site-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>ZeroTier</h3>
+                            <p>ZeroTier Central - Networks</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 游戏 -->
+            <section class="category-section">
+                <h2 class="category-title">
+                    <i class="fas fa-gamepad"></i>
+                    游戏
+                </h2>
+                <div class="sites-grid">
+                    <a href="https://blitz.gg/lol" target="_blank" class="site-card" data-keywords="blitz 英雄联盟 lol 数据追踪">
+                        <div class="site-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="site-info">
+                            <h3>Blitz</h3>
+                            <p>速到师，玩家赢得英雄联盟的最佳数据追踪</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 我的导航站. 基于书签精心制作</p>
+                <div class="footer-stats">
+                    <span id="siteCount">0</span> 个网站
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
